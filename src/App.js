@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+//import './App.css';
+//import react , { Component}  from 'react';
+import Category from './components/Category';
+//import Test from './components/Test';
+import React from 'react';
+//import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+export default function App() {
+  const n=5;
+  return(){
+    <>
+    <h1 >MY APPLICATION</h1>
+//<Test/>
+ 
+    for(let i=0;i<n;i++)
+    [...Array(n)].map((e, i) =>
+     <Category title="i am" key={i}/>)
   );
-}
 
-export default App;
+}
